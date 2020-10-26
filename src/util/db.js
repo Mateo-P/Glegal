@@ -48,7 +48,9 @@ export function updateItem(id, data) {
 export function createItem(data) {
   return firestore.collection("items").add(data);
 }
-
+export function getDepartments() {
+  return firestore.collection("departamentos").doc("2EEEJUAvERX86WOPtsWb  ")
+}
 /**** HELPERS ****/
 
 // Reducer for useQuery hook state and actions

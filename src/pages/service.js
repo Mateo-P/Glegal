@@ -1,9 +1,9 @@
 import React from "react";
-import PricingSection from "./../components/PricingSection";
+import ServiceSection from "../components/ServiceSection";
 
 function PricingPage(props) {
   return (
-    <PricingSection
+    <ServiceSection
       bg="white"
       textColor="dark"
       size="md"

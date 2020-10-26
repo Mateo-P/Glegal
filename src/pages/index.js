@@ -2,15 +2,29 @@ import React from "react";
 import HeroSection from "./../components/HeroSection";
 import ClientsSection from "./../components/ClientsSection";
 import FeaturesSection from "./../components/FeaturesSection";
-import TestimonialsSection from "./../components/TestimonialsSection";
+import DependientesLayout from "../components/DependientesLayout";
 import NewsletterSection from "./../components/NewsletterSection";
 import { useRouter } from "./../util/router.js";
-
+import {useEffect, useState} from "react";
+import { getDepartments } from "../util/db";
 function IndexPage(props) {
   const router = useRouter();
-
+  const [departments, setDepartments]= useState(null)
+  useEffect(() => {
+    setDepartments(getDepartments)
+  }, [])
+  console.log(departments)
   return (
     <>
+     <DependientesLayout
+        bg="light"
+        textColor="dark"
+        size="md"
+        bgImage=""
+        bgImageOpacity={1}
+        title="Dependientes Judiciales"
+        subtitle=""
+      />
       <HeroSection
         bg="white"
         textColor="dark"
@@ -24,7 +38,7 @@ function IndexPage(props) {
         image="https://uploads.divjoy.com/undraw-japan_ubgk.svg"
         buttonOnClick={() => {
           // Navigate to pricing page
-          router.push("/pricing");
+          router.push("/service");
         }}
       />
       <ClientsSection
@@ -45,15 +59,7 @@ function IndexPage(props) {
         title="Features"
         subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
       />
-      <TestimonialsSection
-        bg="light"
-        textColor="dark"
-        size="md"
-        bgImage=""
-        bgImageOpacity={1}
-        title="Dependientes Judiciales"
-        subtitle=""
-      />
+     
       <NewsletterSection
         bg="white"
         textColor="dark"

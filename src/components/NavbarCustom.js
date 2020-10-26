@@ -24,20 +24,20 @@ function NavbarCustom(props) {
           </Navbar.Brand>
         </LinkContainer>
         <Form inline>
-      <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-      <Button variant="outline-primary">Search</Button>
+      <FormControl type="text" placeholder="Departamentos" className="mr-sm-2" />
+      <Button variant="outline-primary">Buscar</Button>
     </Form>
         <Navbar.Toggle aria-controls="navbar-nav" className="border-0" />
         <Navbar.Collapse id="navbar-nav" className="justify-content-end">
           <Nav>
             {auth.user && (
-              <NavDropdown id="dropdown" title="Account" alignRight={true}>
+              <NavDropdown id="dropdown" title="Cuenta" alignRight={true}>
                 <LinkContainer to="/dashboard">
                   <NavDropdown.Item active={false}>Dashboard</NavDropdown.Item>
                 </LinkContainer>
 
                 <LinkContainer to="/settings/general">
-                  <NavDropdown.Item active={false}>Settings</NavDropdown.Item>
+                  <NavDropdown.Item active={false}>Mi perfil</NavDropdown.Item>
                 </LinkContainer>
 
                 <Dropdown.Divider />
@@ -50,7 +50,7 @@ function NavbarCustom(props) {
                       auth.signout();
                     }}
                   >
-                    Sign out
+                    Salir
                   </NavDropdown.Item>
                 </LinkContainer>
               </NavDropdown>

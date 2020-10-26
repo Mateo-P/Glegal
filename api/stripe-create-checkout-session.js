@@ -48,7 +48,7 @@ router.post("/", requireAuth, async (req, res) => {
       //billing_address_collection: "required",
       //shipping_address_collection: { allowed_countries: ['US'] },
       success_url: `${process.env.STRIPE_DOMAIN}/dashboard?paid=true`,
-      cancel_url: `${process.env.STRIPE_DOMAIN}/pricing`,
+      cancel_url: `${process.env.STRIPE_DOMAIN}/service`,
     });
 
     // Return success response

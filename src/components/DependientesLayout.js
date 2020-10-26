@@ -2,9 +2,9 @@ import React from "react";
 import Section from "./Section";
 import Container from "react-bootstrap/Container";
 import SectionHeader from "./SectionHeader";
-import Testimonials from "./Testimonials";
+import Dependientes from "./Dependientes";
 
-function TestimonialsSection(props) {
+function DependientesSection(props) {
   return (
     <Section
       bg={props.bg}
@@ -21,7 +21,7 @@ function TestimonialsSection(props) {
           spaced={true}
           className="text-center"
         />
-        <Testimonials
+        <Dependientes
           items={[
             {
               avatar: "https://uploads.divjoy.com/pravatar-150x-5.jpeg",
@@ -51,4 +51,4 @@ function TestimonialsSection(props) {
   );
 }
 
-export default TestimonialsSection;
+export default DependientesSection;

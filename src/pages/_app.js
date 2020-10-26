@@ -4,7 +4,7 @@ import NavbarCustom from "./../components/NavbarCustom";
 import IndexPage from "./index";
 import AboutPage from "./about";
 import FaqPage from "./faq";
-import PricingPage from "./pricing";
+import ServicePage from "./service";
 import ContactPage from "./contact";
 import DashboardPage from "./dashboard";
 import SettingsPage from "./settings";
@@ -26,7 +26,7 @@ function App(props) {
             bg="white"
             variant="light"
             expand="md"
-            logo="https://uploads.divjoy.com/logo.svg"
+            logo="https://i.ibb.co/n6pF8zG/glegalogo.png"
           />
 
           <Switch>
@@ -36,7 +36,7 @@ function App(props) {
 
             <Route exact path="/faq" component={FaqPage} />
 
-            <Route exact path="/pricing" component={PricingPage} />
+            <Route exact path="/service" component={ServicePage} />
 
             <Route exact path="/contact" component={ContactPage} />
 

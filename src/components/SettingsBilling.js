@@ -23,7 +23,7 @@ function SettingsBilling(props) {
     } else {
       // Otherwise go to pricing so they can
       // purchase a plan
-      router.push("/pricing");
+      router.push("/service");
     }
 
     // eslint-disable-next-line react-hooks/exhaustive-deps

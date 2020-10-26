@@ -74,8 +74,12 @@ function SettingsGeneral(props) {
           })}
         />
       </Form.Group>
+      <Form.Group controlId="exampleForm.ControlTextarea1">
+    <Form.Label>Descripción</Form.Label>
+    <Form.Control as="textarea" rows={3} />
+  </Form.Group>
       <Button type="submit" disabled={pending}>
-        <span>Save</span>
+        <span>Guardar</span>
 
         {pending && (
           <Spinner

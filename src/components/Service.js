@@ -4,10 +4,10 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { LinkContainer } from "react-router-bootstrap";
-import { useAuth } from "./../util/auth.js";
+import { useAuth } from "../util/auth.js";
 import "./Pricing.scss";
 
-function Pricing(props) {
+function Service(props) {
   const auth = useAuth();
 
   return (
@@ -69,4 +69,4 @@ function Pricing(props) {
   );
 }
 
-export default Pricing;
+export default Service;

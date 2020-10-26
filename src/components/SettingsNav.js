@@ -12,12 +12,12 @@ function SettingsNav(props) {
       </Nav.Item>
       <Nav.Item>
         <LinkContainer to="/settings/password">
-          <Nav.Link eventKey="password">Password</Nav.Link>
+          <Nav.Link eventKey="password">Contraseña</Nav.Link>
         </LinkContainer>
       </Nav.Item>
       <Nav.Item>
         <LinkContainer to="/settings/billing">
-          <Nav.Link eventKey="billing">Billing</Nav.Link>
+          <Nav.Link eventKey="billing">Mis Servicios</Nav.Link>
         </LinkContainer>
       </Nav.Item>
     </Nav>

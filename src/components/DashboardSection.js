@@ -12,9 +12,10 @@ import { useAuth } from "./../util/auth.js";
 import "./DashboardSection.scss";
 
 function DashboardSection(props) {
+ 
   const auth = useAuth();
   const router = useRouter();
-
+  console.log(auth)
   return (
     <Section
       bg={props.bg}
@@ -99,7 +100,7 @@ function DashboardSection(props) {
               )}
 
               {!auth.user.stripeSubscriptionId && (
-                <Link to="/pricing">Subscribe to a plan</Link>
+                <Link to="/service">Subscribe to a plan</Link>
               )}
             </ListGroup.Item>
             <ListGroup.Item>
